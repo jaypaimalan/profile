@@ -1,6 +1,6 @@
 export const ACCENTS = [
-  { id: 'purple', primary: '#a855f7', from: '#7c3aed', to: '#ec4899' },
   { id: 'blue',   primary: '#60a5fa', from: '#2563eb', to: '#06b6d4' },
+  { id: 'purple', primary: '#a855f7', from: '#7c3aed', to: '#ec4899' },
   { id: 'green',  primary: '#4ade80', from: '#16a34a', to: '#059669' },
   { id: 'orange', primary: '#fb923c', from: '#ea580c', to: '#d97706' },
 ]

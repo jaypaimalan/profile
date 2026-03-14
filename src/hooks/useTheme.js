@@ -7,7 +7,7 @@ export const SCROLL_ID = 'main-scroll'
 
 export function useTheme() {
   const [isDark,   setIsDark]   = useState(() => localStorage.getItem('fjp-mode') !== 'light')
-  const [accentId, setAccentId] = useState(() => localStorage.getItem('fjp-accent') || 'purple')
+  const [accentId, setAccentId] = useState(() => localStorage.getItem('fjp-accent') || 'blue')
   const [active,   setActive]   = useState('Home')
 
   const T  = isDark ? DARK : LIGHT
