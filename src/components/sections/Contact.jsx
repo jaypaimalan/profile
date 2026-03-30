@@ -118,7 +118,7 @@ export function Contact({ T, AC, accentId, grad, gradText, divider, isMobile }) 
 
   return (
     <section id="sec-contact" style={{
-      padding: 'clamp(48px,8vw,80px) clamp(24px,5vw,60px) clamp(60px,10vw,100px)',
+      padding: 'clamp(48px,8vw,80px) clamp(24px,5vw,60px) clamp(60px,10vw,120px)',
       ...divider,
       display: 'flex', gap: 50, alignItems: 'flex-start',
       // Mobile: stack vertically. Desktop: side by side.
@@ -155,7 +155,9 @@ export function Contact({ T, AC, accentId, grad, gradText, divider, isMobile }) 
       {isMobile
         ? <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>{formCard}</div>
         : formCard
-      }
+      } 
     </section>
+    
+
   )
 }
