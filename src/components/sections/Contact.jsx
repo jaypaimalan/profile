@@ -129,7 +129,7 @@ export function Contact({ T, AC, accentId, grad, gradText, divider, isMobile }) 
       <div data-reveal="left" style={{ flex: '1 1 260px', minWidth: 0 }}>
         <h2 style={{ ...F.BC, fontSize: 'clamp(36px,5vw,52px)', fontWeight: 900, lineHeight: .92, color: T.text }}>REACH OUT</h2>
         <h2 key={`reach-${accentId}`} style={{ ...F.BC, fontSize: 'clamp(36px,5vw,52px)', fontWeight: 900, lineHeight: .92, marginBottom: 22, ...gradText }}>TO ME...</h2>
-        <p style={{ ...F.DM, color: T.textSub, fontSize: 13.5, lineHeight: 1.78, maxWidth: 300, marginBottom: 36 }}>
+        <p style={{ ...F.DM, color: T.textSub, fontSize: 13.5, lineHeight: 1.78, maxWidth: 'clamp(100%, 60vw, 300px)', marginBottom: 36 }}>
           Have a project in mind? Let's talk about how I can help you build something amazing. Open for freelance and full-time opportunities.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>

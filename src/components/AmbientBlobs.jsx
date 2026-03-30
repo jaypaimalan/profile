@@ -11,8 +11,7 @@ export function AmbientBlobs({ AC, isDark }) {
     position: 'fixed',
     [side]: 0,
     top: 0,
-    // width: 'max(180px, calc(50vw - 530px))',
-    width: 'max(180px, 100%)',
+    width: '100%',
     height: '100vh',
     pointerEvents: 'none',
     zIndex: 0,
@@ -26,7 +25,7 @@ export function AmbientBlobs({ AC, isDark }) {
         <div className="blob blob-1" style={{ width: 280, height: 280, background: alpha(AC.from, 'cc', '99'), position: 'absolute', top: '8%',  left: '-60px' }} />
         <div className="blob blob-3" style={{ width: 220, height: 220, background: alpha(AC.to,   'aa', '77'), position: 'absolute', top: '40%', left: '10px'  }} />
         <div className="blob blob-2" style={{ width: 180, height: 180, background: alpha(AC.from, '88', '55'), position: 'absolute', top: '68%', left: '-30px' }} />
-        <div style={{ position: 'absolute', inset: 0, backdropFilter: 'blur(35px)', WebkitBackdropFilter: 'blur(35px)' }} />
+        <div style={{ position: 'absolute', inset: 0, backdropFilter: 'blur(55px)', WebkitBackdropFilter: 'blur(55px)' }} />
       </div>
 
       {/* ── Right cluster ── */}
@@ -34,7 +33,7 @@ export function AmbientBlobs({ AC, isDark }) {
         <div className="blob blob-2" style={{ width: 260, height: 260, background: alpha(AC.to,   'bb', '88'), position: 'absolute', top: '15%', right: '-50px' }} />
         <div className="blob blob-4" style={{ width: 200, height: 200, background: alpha(AC.from, '99', '66'), position: 'absolute', top: '48%', right: '-20px' }} />
         <div className="blob blob-1" style={{ width: 240, height: 240, background: alpha(AC.to,   'aa', '77'), position: 'absolute', top: '72%', right: '-60px' }} />
-        <div style={{ position: 'absolute', inset: 0, backdropFilter: 'blur(35px)', WebkitBackdropFilter: 'blur(35px)' }} />
+        <div style={{ position: 'absolute', inset: 0, backdropFilter: 'blur(55px)', WebkitBackdropFilter: 'blur(55px)' }} />
       </div>
     </>
   )

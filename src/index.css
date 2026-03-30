@@ -81,4 +81,21 @@ a[href] > div[style*="border-radius: 22px"] {
   transition: transform 0.28s cubic-bezier(0.22,1,0.36,1), box-shadow 0.28s !important;
 }
 
- 
+
+.layout-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.dark-mode {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.light-mode {
+  background-color: rgba(255, 255, 255, 0.6);
+}

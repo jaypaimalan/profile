@@ -26,7 +26,8 @@ export function MobileNav({ T, AC, isDark, accentId, active, grad, scrollTo, tog
         padding: '0 20px',
         background: 'transparent',
         pointerEvents: 'none', // let clicks fall through except children
-        backdropFilter: 'blur(30px)'
+        backdropFilter: 'blur(10px)',
+        backgroundColor: 'rgba(0,0,0,0.5)',
       }}>
         <div style={{ pointerEvents: 'auto' }}>
           <FJLogo from={AC.from} to={AC.to} />

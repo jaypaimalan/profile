@@ -1,5 +1,4 @@
-import { ACCENTS } from '../theme'
-import { F } from '../theme'
+import { ACCENTS, F } from '../theme'
 import { IC } from '../icons'
 import { NAV, SOCIAL_LINKS } from '../data'
 import { FJLogo, SbDivider } from './UI'
@@ -7,7 +6,6 @@ import { FJLogo, SbDivider } from './UI'
 export function Sidebar({ T, AC, isDark, accentId, active, grad, scrollTo, toggleMode, setAccent }) {
   return (
     <aside style={{
-      // Flex child — no position:fixed, sits directly next to <main>
       flexShrink: 0,
       width: 74, height: '100vh',
       display: 'flex', flexDirection: 'column', alignItems: 'center',
@@ -28,22 +26,45 @@ export function Sidebar({ T, AC, isDark, accentId, active, grad, scrollTo, toggl
         {NAV.map(({ label, icon, id }) => {
           const on = active === label
           return (
-            <button key={label} onClick={() => scrollTo(id, label)}
-              className="sidebar-nav-btn"
-              data-active={on ? 'true' : 'false'}
+            <button
+              key={label}
+              onClick={() => scrollTo(id, label)}
               style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, padding: '10px 0', width: '100%' }}
-              onMouseEnter={e => { if (!on) { e.currentTarget.style.opacity = '0.7'; e.currentTarget.querySelector('span').style.color = AC.primary } }}
-              onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.querySelector('span').style.color = on ? AC.primary : T.textMuted }}>
-              <div style={{
-                width: 46, height: 46, borderRadius: 14, transition: 'background .22s, box-shadow .22s, color .22s',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: on ? grad : 'transparent',
-                color: on ? '#fff' : T.textMuted,
-                boxShadow: on ? `0 6px 18px ${AC.from}55` : 'none',
-              }}>
+              onMouseEnter={e => {
+                if (on) return
+                // Change both icon and label to accent color
+                const iconDiv = e.currentTarget.querySelector('.nav-icon')
+                const span    = e.currentTarget.querySelector('span')
+                if (iconDiv) iconDiv.style.color = AC.primary
+                if (span)    span.style.color    = AC.primary
+              }}
+              onMouseLeave={e => {
+                if (on) return
+                const iconDiv = e.currentTarget.querySelector('.nav-icon')
+                const span    = e.currentTarget.querySelector('span')
+                if (iconDiv) iconDiv.style.color = T.textMuted
+                if (span)    span.style.color    = T.textMuted
+              }}
+            >
+              <div
+                className="nav-icon"
+                style={{
+                  width: 46, height: 46, borderRadius: 14,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  background: on ? grad : 'transparent',
+                  color: on ? '#fff' : T.textMuted,
+                  boxShadow: on ? `0 6px 18px ${AC.from}55` : 'none',
+                  transition: 'background .22s, box-shadow .22s, color .22s',
+                }}>
                 {icon}
               </div>
-              <span style={{ ...F.DM, fontSize: 8.5, fontWeight: on ? 600 : 400, color: on ? AC.primary : T.textMuted, letterSpacing: '.04em', transition: 'color .2s' }}>
+              <span style={{
+                ...F.DM, fontSize: 8.5,
+                fontWeight: on ? 600 : 400,
+                color: on ? AC.primary : T.textMuted,
+                letterSpacing: '.04em',
+                transition: 'color .2s',
+              }}>
                 {label}
               </span>
             </button>
@@ -57,7 +78,7 @@ export function Sidebar({ T, AC, isDark, accentId, active, grad, scrollTo, toggl
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 12, flexShrink: 0 }}>
         {/* Mode toggle */}
         <button onClick={toggleMode} title={isDark ? 'Light mode' : 'Dark mode'}
-          style={{ width: 46, height: 36, borderRadius: 10, background: 'none', border: `1px solid ${T.sidebarBorder}`, cursor: 'pointer', color: T.textMuted, display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all .2s', marginBottom: 14 }}
+          style={{ width: 46, height: 36, borderRadius: 10, background: 'none', border: `1px solid ${T.sidebarBorder}`, cursor: 'pointer', color: T.textMuted, display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'color .2s, border-color .2s', marginBottom: 14 }}
           onMouseEnter={e => { e.currentTarget.style.color = AC.primary; e.currentTarget.style.borderColor = `${AC.from}55` }}
           onMouseLeave={e => { e.currentTarget.style.color = T.textMuted; e.currentTarget.style.borderColor = T.sidebarBorder }}>
           {isDark ? IC.sun : IC.moon}

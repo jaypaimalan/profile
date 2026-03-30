@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { ACCENTS, DARK, LIGHT, F } from '../theme'
 import { NAV } from '../data'
 import { smoothScrollTo } from './useScrollAnimations'
@@ -6,9 +6,14 @@ import { smoothScrollTo } from './useScrollAnimations'
 export const SCROLL_ID = 'main-scroll'
 
 export function useTheme() {
-  const [isDark,   setIsDark]   = useState(() => localStorage.getItem('fjp-mode') !== 'light')
+  const [isDark,   setIsDark]   = useState(() => localStorage.getItem('fjp-mode') !== 'light') 
   const [accentId, setAccentId] = useState(() => localStorage.getItem('fjp-accent') || 'blue')
   const [active,   setActive]   = useState('Home')
+
+  // When user clicks a nav item we lock out the scroll-based active update
+  // for a short window so the active state doesn't flicker back to the old section.
+  const scrollLockRef = useRef(false)
+  const lockTimer     = useRef(null)
 
   const T  = isDark ? DARK : LIGHT
   const AC = ACCENTS.find(a => a.id === accentId) || ACCENTS[0]
@@ -35,9 +40,15 @@ export function useTheme() {
     localStorage.setItem('fjp-accent', id)
   }
 
-  // Smooth scroll using rAF-based easing (no external library)
   const scrollTo = (id, label) => {
+    // Immediately set the active tab — no flicker
     setActive(label)
+
+    // Lock the scroll listener for 1 s so it can't override our choice
+    scrollLockRef.current = true
+    clearTimeout(lockTimer.current)
+    lockTimer.current = setTimeout(() => { scrollLockRef.current = false }, 1000)
+
     const target    = document.getElementById(id)
     if (!target) return
     const container = document.getElementById(SCROLL_ID)
@@ -45,9 +56,7 @@ export function useTheme() {
     if (container) smoothScrollTo(container, target.offsetTop)
   }
 
-  // Scroll-based active nav — watches scrollTop directly for reliability in both
-  // directions. Finds whichever section's top edge is closest above the center
-  // of the visible area. This avoids IntersectionObserver skipping short sections.
+  // Scroll-position based active nav — fires on every scroll event
   useEffect(() => {
     const timer = setTimeout(() => {
       const container = document.getElementById(SCROLL_ID)
@@ -59,6 +68,9 @@ export function useTheme() {
            .filter(({ el }) => el)
 
       const onScroll = () => {
+        // Skip if we're in the locked window after a manual nav click
+        if (scrollLockRef.current) return
+
         const sections = getSections()
         const scrollMid = container.scrollTop + container.clientHeight * 0.4
 
@@ -70,12 +82,15 @@ export function useTheme() {
       }
 
       container.addEventListener('scroll', onScroll, { passive: true })
-      onScroll() // set initial
+      onScroll()
 
       return () => container.removeEventListener('scroll', onScroll)
     }, 150)
 
-    return () => clearTimeout(timer)
+    return () => {
+      clearTimeout(timer)
+      clearTimeout(lockTimer.current)
+    }
   }, [])
 
   return { T, AC, ACCENTS, isDark, accentId, active, setActive, grad, gradText, divider, tagStyle, toggleMode, setAccent, scrollTo }

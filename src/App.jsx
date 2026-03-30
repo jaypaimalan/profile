@@ -70,12 +70,15 @@ export default function App() {
         /* ═══ DESKTOP ══════════════════════════════════════════
            Fixed outer shell → centered 1200px → sidebar | main
         ═══════════════════════════════════════════════════════ */
-        <div  style={{
+        <div style={{
           display: 'flex',
-          width: '100%', maxWidth: 1200,
+          width: '100%', 
+          maxWidth: 1200,
           height: '100vh',
           margin: '0 auto',
-          position: 'relative', zIndex: 1,
+          position: 'relative', 
+          zIndex: 1,
+          backgroundColor: T.wrapperBG,
         }}>
           <Sidebar {...navProps} />
           <main
