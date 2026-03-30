@@ -57,7 +57,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
     link: 'https://www.hcas.edu/',
-    imgsrc: '/public/thumbnails/newproject1.png',
+    imgsrc: '/thumbnails/newproject1.png',
   },
   {
     title: 'Septic Cleaning Insurance Group',
@@ -65,7 +65,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://septiccleaninginsurance.com/',
-    imgsrc: '/public/thumbnails/newproject2.png',
+    imgsrc: '/thumbnails/newproject2.png',
   },
   {
     title: 'Wee Care Daycare',
@@ -73,7 +73,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://www.weecaredc.com/',
-    imgsrc: '/public/thumbnails/project6.png',
+    imgsrc: '/thumbnails/project6.png',
   }, 
   {
     title: 'TaiVenture Childcare',
@@ -81,7 +81,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
     link: 'https://www.taiventurechildcare.com/',
-    imgsrc: '/public/thumbnails/project1.png',
+    imgsrc: '/thumbnails/project1.png',
   },
   {
     title: 'Goschen Angels Home Care',
@@ -89,7 +89,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://www.goschenangelshomecare.com/',
-    imgsrc: '/public/thumbnails/project2.png',
+    imgsrc: '/thumbnails/project2.png',
   },
   {
     title: 'Restoration Medical Supply, LLC',
@@ -97,7 +97,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://www.restorationmedsupply.com/',
-    imgsrc: '/public/thumbnails/project11.png',
+    imgsrc: '/thumbnails/project11.png',
   }, 
   {
     title: 'Greater Caring Provider Helpers',
@@ -105,7 +105,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
     link: 'https://www.greatercaringproviderhelpersllc.com/',
-    imgsrc: '/public/thumbnails/project5.png',
+    imgsrc: '/thumbnails/project5.png',
   },
   {
     title: 'Touching Lives Ministries',
@@ -113,7 +113,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://www.touchinglivesministries.org/',
-    imgsrc: '/public/thumbnails/newproject3.png',
+    imgsrc: '/thumbnails/newproject3.png',
   },
   {
     title: 'Jullok Lux',
@@ -121,7 +121,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://www.jullokluxbeauty.com/',
-    imgsrc: '/public/thumbnails/project10.png',
+    imgsrc: '/thumbnails/project10.png',
   } 
 ]
 
