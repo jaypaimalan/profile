@@ -15,13 +15,13 @@ export function About({ T, AC, accentId, grad, gradText, divider, isMobile }) {
       <div data-reveal="up" style={{ flex: isMobile ? 'none' : '1 1 280px', width: isMobile ? '100%' : undefined, minWidth: 0 }}>
         <p style={{ ...F.DM, fontSize: 10, color: T.textMuted, letterSpacing: '.26em', textTransform: 'uppercase', marginBottom: 8 }}>About Me</p>
         <h2 style={{ ...F.BC, fontSize: 'clamp(32px,4vw,44px)', fontWeight: 900, lineHeight: 1.05, marginBottom: 20, color: T.text }}>
-          STORY ABOUT <span key={`about-${accentId}`} style={gradText}>MYSELF</span>
+          THE PERSON <span key={`about-${accentId}`} style={gradText}>BEHIND THE CODE</span>
         </h2>
         <p style={{ ...F.DM, color: T.textSub, fontSize: 13.5, lineHeight: 1.82, maxWidth: isMobile ? '100%' : 440, marginBottom: 18 }}>
-          I'm a Front-End Developer based in Cebu, Philippines, specializing in building pixel-perfect, high-performance websites. With a background in 2D animation, I bring a sharp eye for design and visual storytelling to every project.
+          I'm a Front-End Developer based in Cebu, Philippines with a knack for turning designs into fast, polished digital experiences. Before writing code, I spent years as a 2D animator — and that eye for detail, motion, and composition still shapes every interface I build.
         </p>
         <p style={{ ...F.DM, color: T.textSub, fontSize: 13.5, lineHeight: 1.82, maxWidth: isMobile ? '100%' : 440, marginBottom: 36 }}>
-          Backed by a BS in Information Technology and hands-on experience with the full WordPress ecosystem and modern JavaScript frameworks, I deliver fast, accessible, and SEO-ready digital experiences.
+          Armed with a BS in Information Technology and deep hands-on experience across the WordPress ecosystem and modern JavaScript frameworks, I build sites that look great, load fast, and rank well — without cutting corners on accessibility or maintainability.
         </p>
         <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
           {[

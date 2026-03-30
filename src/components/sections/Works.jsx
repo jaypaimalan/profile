@@ -40,7 +40,7 @@ export function Works({ T, AC, grad, divider }) {
               }}
               onMouseEnter={e => e.currentTarget.style.opacity = '.85'}
               onMouseLeave={e => e.currentTarget.style.opacity = '1'}>
-              VIEW PROJECT →
+              VIEW SITE →
             </a>
           </div>
         ))}
