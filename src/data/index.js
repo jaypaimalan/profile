@@ -57,7 +57,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
     link: '#',
-    imgsrc: '/public/thumbnails/project1.png',
+    imgsrc: 'thumbnails/project1.png',
   },
   {
     title: 'E-Commerce Stores',
@@ -65,7 +65,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: '#',
-    imgsrc: '/public/thumbnails/project2.png',
+    imgsrc: 'thumbnails/project2.png',
   },
   {
     title: 'E-Commerce Stores',
@@ -73,7 +73,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: '#',
-    imgsrc: '/public/thumbnails/project2.png',
+    imgsrc: 'thumbnails/project2.png',
   }, 
   {
     title: 'WordPress Business Sites',
@@ -81,7 +81,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
     link: '#',
-    imgsrc: '/public/thumbnails/project1.png',
+    imgsrc: 'thumbnails/project1.png',
   },
   {
     title: 'E-Commerce Stores',
@@ -89,7 +89,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: '#',
-    imgsrc: '/public/thumbnails/project2.png',
+    imgsrc: 'thumbnails/project2.png',
   },
   {
     title: 'E-Commerce Stores',
@@ -97,7 +97,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: '#',
-    imgsrc: '/public/thumbnails/project2.png',
+    imgsrc: 'thumbnails/project2.png',
   }, 
   {
     title: 'WordPress Business Sites',
@@ -105,7 +105,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
     link: '#',
-    imgsrc: '/public/thumbnails/project1.png',
+    imgsrc: 'thumbnails/project1.png',
   },
   {
     title: 'E-Commerce Stores',
@@ -113,7 +113,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: '#',
-    imgsrc: '/public/thumbnails/project2.png',
+    imgsrc: 'thumbnails/project2.png',
   },
   {
     title: 'E-Commerce Stores',
@@ -121,7 +121,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: '#',
-    imgsrc: '/public/thumbnails/project2.png',
+    imgsrc: 'thumbnails/project2.png',
   } 
 ]
 
