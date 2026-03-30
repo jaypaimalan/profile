@@ -56,72 +56,117 @@ export const WORKS = [
     type: 'Healthcare Education · School & Training Site',
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
+<<<<<<< HEAD
     link: 'https://www.hcas.edu/',
     imgsrc: '/public/thumbnails/newproject1.png',
+=======
+    link: '#',
+    imgsrc: '/thumbnails/project1.png',
+>>>>>>> 91c4ddb89e0026618f80d79135925a23de766b77
   },
   {
     title: 'Septic Cleaning Insurance Group',
     type: 'Insurance Services · Lead Generation Site',
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
+<<<<<<< HEAD
     link: 'https://septiccleaninginsurance.com/',
     imgsrc: '/public/thumbnails/newproject2.png',
+=======
+    link: '#',
+    imgsrc: '/thumbnails/project2.png',
+>>>>>>> 91c4ddb89e0026618f80d79135925a23de766b77
   },
   {
     title: 'Wee Care Daycare',
     type: 'Childcare Center · Local Services Site',
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
+<<<<<<< HEAD
     link: 'https://www.weecaredc.com/',
     imgsrc: '/public/thumbnails/project6.png',
+=======
+    link: '#',
+    imgsrc: '/thumbnails/project2.png',
+>>>>>>> 91c4ddb89e0026618f80d79135925a23de766b77
   }, 
   {
     title: 'TaiVenture Childcare',
     type: 'Childcare & Education · Service Site',
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
+<<<<<<< HEAD
     link: 'https://www.taiventurechildcare.com/',
     imgsrc: '/public/thumbnails/project1.png',
+=======
+    link: '#',
+    imgsrc: '/thumbnails/project1.png',
+>>>>>>> 91c4ddb89e0026618f80d79135925a23de766b77
   },
   {
     title: 'Goschen Angels Home Care',
     type: 'Home Health Care · Service Site',
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
+<<<<<<< HEAD
     link: 'https://www.goschenangelshomecare.com/',
     imgsrc: '/public/thumbnails/project2.png',
+=======
+    link: '#',
+    imgsrc: '/thumbnails/project2.png',
+>>>>>>> 91c4ddb89e0026618f80d79135925a23de766b77
   },
   {
     title: 'Restoration Medical Supply, LLC',
     type: 'Medical Supply · E-Commerce Store',
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
+<<<<<<< HEAD
     link: 'https://www.restorationmedsupply.com/',
     imgsrc: '/public/thumbnails/project11.png',
+=======
+    link: '#',
+    imgsrc: '/thumbnails/project2.png',
+>>>>>>> 91c4ddb89e0026618f80d79135925a23de766b77
   }, 
   {
     title: 'Greater Caring Provider Helpers',
     type: 'Virtual Healthcare · Service Site',
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
+<<<<<<< HEAD
     link: 'https://www.greatercaringproviderhelpersllc.com/',
     imgsrc: '/public/thumbnails/project5.png',
+=======
+    link: '#',
+    imgsrc: '/thumbnails/project1.png',
+>>>>>>> 91c4ddb89e0026618f80d79135925a23de766b77
   },
   {
     title: 'Touching Lives Ministries',
     type: 'Home Health Care · Service Site',
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
+<<<<<<< HEAD
     link: 'https://www.touchinglivesministries.org/',
     imgsrc: '/public/thumbnails/newproject3.png',
+=======
+    link: '#',
+    imgsrc: '/thumbnails/project2.png',
+>>>>>>> 91c4ddb89e0026618f80d79135925a23de766b77
   },
   {
     title: 'Jullok Lux',
     type: 'Medical Spa · Beauty & Aesthetics Site',
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
+<<<<<<< HEAD
     link: 'https://www.jullokluxbeauty.com/',
     imgsrc: '/public/thumbnails/project10.png',
+=======
+    link: '#',
+    imgsrc: '/thumbnails/project2.png',
+>>>>>>> 91c4ddb89e0026618f80d79135925a23de766b77
   } 
 ]
 
