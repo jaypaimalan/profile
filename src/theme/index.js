@@ -9,7 +9,7 @@ export const DARK = {
   bg: '#0d0d0d', bgAlt: '#0f0f10',
   card: 'rgba(255,255,255,0.04)', cardBorder: 'rgba(255,255,255,0.08)',
   divider: 'rgba(255,255,255,0.07)', dividerStrong: 'rgba(255,255,255,0.15)',
-  text: '#ffffff', textSub: '#b1b1b1', textMuted: '#777777',
+  text: '#ffffff', textSub: '#b1b1b1', textMuted: '#999999',
   sidebar: '#111111', sidebarBorder: 'rgba(255,255,255,0.06)',
   sendBg: '#ffffff', sendText: '#111111',
   errText: 'rgba(255,180,180,0.95)',
