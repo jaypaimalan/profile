@@ -5,7 +5,7 @@ const SECRET = 'fjp2025'
 
 // ── CounterAPI.dev settings ──────────────────────────────
 const API = 'https://counterapi.dev'
-const NAMESPACE = 'jaypaimalan-portfolio'
+const NAMESPACE = 'francis-jay-paimalans-team-3630'
 const KEY = 'visitors'
 
 export default function Visitors() {
