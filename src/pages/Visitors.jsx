@@ -4,8 +4,10 @@ import { useState, useEffect } from 'react'
 const SECRET = 'fjp2025'
 
 // ── CounterAPI.dev settings ──────────────────────────────
-const API_BASE = 'https://api.counterapi.dev/v2/francis-jay-paimalans-team-3630/first-counter-3630'
+const API_BASE = '/api/counter/v2/francis-jay-paimalans-team-3630/first-counter-3630'
 const API_KEY = import.meta.env.VITE_COUNTER_API_KEY
+ 
+ 
 
 export default function Visitors() {
   const [authed, setAuthed] = useState(() => sessionStorage.getItem('vjp') === '1')
@@ -31,13 +33,13 @@ export default function Visitors() {
 
   // Helper function for API calls with auth header
   const fetchWithAuth = async (endpoint, options = {}) => {
-    const response = await fetch(`${API_BASE}${endpoint}`, {
-      ...options,
-      headers: {
-        'Authorization': `Bearer ${API_KEY}`,
-        ...options.headers,
-      },
-    })
+  const response = await fetch(`${API_BASE}${endpoint}`, {
+    ...options,
+    headers: {
+      'Content-Type': 'application/json',
+      ...options.headers,
+    },
+  })
     
     if (!response.ok) {
       throw new Error(`API error: ${response.status}`)
