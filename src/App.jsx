@@ -86,6 +86,10 @@ export default function App() {
             style={{ flex: 1, height: '100vh', overflowY: 'auto', overflowX: 'hidden' }}
           >
             <Sections shared={shared} scrollTo={scrollTo} />
+                      <p>
+                      Total Visitors:{" "}
+                      <SiteViews projectName="my-portfolio" />
+                      </p>
           </main>
         </div>
       )}
