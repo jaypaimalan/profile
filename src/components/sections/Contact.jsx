@@ -156,6 +156,7 @@ export function Contact({ T, AC, accentId, grad, gradText, divider, isMobile }) 
         ? <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>{formCard}</div>
         : formCard
       } 
+
     </section>
     
 
