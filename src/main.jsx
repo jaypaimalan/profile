@@ -4,15 +4,16 @@ import App from './App.jsx'
 import Visitors from './pages/Visitors.jsx'
 import './index.css'
 
-// ── Track a visit whenever someone loads the main portfolio ──────────────────
+// ── Detect if visitor is on the dashboard page ─────────────────────────────
 const isVisitorsPage = window.location.pathname === '/visitors'
 
+// ── Track a visit on public pages only ─────────────────────────────────────
 if (!isVisitorsPage) {
-  fetch('https://api.countapi.xyz/hit/jaypaimalan-portfolio/visitors')
-    .catch(() => {}) // silent fail — never break the portfolio
+  fetch('https://counterapi.dev/hit/jaypaimalan-portfolio/visitors')
+    .catch(() => {}) // ignore errors
 }
 
-// ── Simple path-based router (no React Router needed) ───────────────────────
+// ── Simple router (keeps everything super light) ───────────────────────────
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
