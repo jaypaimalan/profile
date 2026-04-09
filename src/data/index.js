@@ -42,7 +42,7 @@ export const SKILLS = [
   },
   {
     category: 'WordPress & CMS',
-    items: ['PHP', 'WordPress', 'Elementor', 'Divi', 'WPBakery', 'WooCommerce', 'ACF', 'Shopify'],
+    items: ['PHP', 'WordPress', 'Elementor', 'Divi', 'WPBakery', 'Cornerstone', 'WooCommerce', 'ACF', 'Shopify'],
   },
   {
     category: 'Tools & Optimization',

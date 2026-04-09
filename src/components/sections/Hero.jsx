@@ -13,7 +13,7 @@ export function Hero({ T, AC, isDark, accentId, grad, gradText, scrollTo }) {
       {/* Text */}
       <div data-reveal="up" style={{ flex: '1 1 300px', zIndex: 2, minWidth: 0 }}>
         <p style={{ ...F.DM, color: AC.primary, fontSize: 11, letterSpacing: '.32em', textTransform: 'uppercase', marginBottom: 20, transition: 'color 0.3s' }}>
-          Front-End Developer · Based in Cebu, PH
+          Wordpress Developer · Based in Cebu, PH
         </p>
         <div style={{ ...F.BC, lineHeight: 0.93, marginBottom: 26 }}>
           <div style={{ fontSize: 'clamp(42px,6vw,66px)', fontWeight: 900, color: T.text, letterSpacing: '-1.5px' }}>MY NAME IS</div>
