@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { supabase } from './lib/supabase'           // add this
 import { useTheme, SCROLL_ID } from './hooks/useTheme'
 import { useScrollAnimations }  from './hooks/useScrollAnimations'
 import { AmbientBlobs }    from './components/AmbientBlobs'
@@ -35,12 +36,15 @@ export default function App() {
   const [isMobile, setIsMobile] = useState(() => window.innerWidth < 768)
 
   useEffect(() => {
+    supabase.rpc('increment_visits')   // add this
+  }, [])
+
+  useEffect(() => {
     const update = () => setIsMobile(window.innerWidth < 768)
     window.addEventListener('resize', update)
     return () => window.removeEventListener('resize', update)
   }, [])
 
-  // Attach GSAP roller reveal animations
   useScrollAnimations(isMobile)
 
   const shared   = { T, AC, isDark, accentId, grad, gradText, divider, tagStyle, isMobile }
@@ -56,7 +60,6 @@ export default function App() {
       <AmbientBlobs AC={AC} isDark={isDark} />
 
       {isMobile ? (
-        /* ═══ MOBILE ═══════════════════════════════════════════ */
         <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', position: 'relative', zIndex: 1 }}>
           <MobileNav {...navProps} />
           <main
@@ -67,9 +70,6 @@ export default function App() {
           </main>
         </div>
       ) : (
-        /* ═══ DESKTOP ══════════════════════════════════════════
-           Fixed outer shell → centered 1200px → sidebar | main
-        ═══════════════════════════════════════════════════════ */
         <div style={{
           display: 'flex',
           width: '100%', 
