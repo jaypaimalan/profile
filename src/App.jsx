@@ -36,8 +36,19 @@ export default function App() {
   const [isMobile, setIsMobile] = useState(() => window.innerWidth < 768)
 
   useEffect(() => {
-    supabase.rpc('increment_visits')   // add this
-  }, [])
+    supabase.rpc('increment_visits')   
+      .then(async ({ error }) => {
+      if (error) return console.error('Visit increment failed:', error.message)
+
+      const { data } = await supabase
+        .from('visits')
+        .select('count')
+        .eq('id', 1)
+        .single()
+
+      console.log('Total visits:', data.count)
+    })
+}, [])
 
   useEffect(() => {
     const update = () => setIsMobile(window.innerWidth < 768)
