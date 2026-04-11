@@ -9,7 +9,7 @@ export const NAV = [
 
 export const EXPERIENCE = [
   {
-    role: 'Front-End Developer',
+    role: 'Wordpress Developer',
     company: 'Proweaver Inc.',
     location: 'Cebu City, Philippines',
     period: 'Sep 2023 – Jan 2026',
