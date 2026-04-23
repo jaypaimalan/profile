@@ -24,7 +24,7 @@ export const EXPERIENCE = [
     ],
   },
   {
-    role: '2D Animator',
+    role: '2D Animator / Video Editor',
     company: 'Honey Entertainment Inc.',
     location: 'Cebu City, Philippines',
     period: 'Jul 2019 – Dec 2022',
@@ -46,7 +46,7 @@ export const SKILLS = [
   {
     category: 'WordPress & CMS',
     items: [
-      'Shopify', 'Webflow', 'Framer', 'PHP', 'Elementor', 'Divi', 'WPBakery', 'Cornerstone',
+      'Shopify', 'Webflow', 'Framer', 'PHP', 'Elementor', 'Divi', 'WPBakery',
       'WooCommerce', 'ACF', 'Shopify', 'Custom Post Types', 'Custom Themes'
     ],
   }, 
@@ -67,7 +67,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
     link: 'https://www.hcas.edu/',
-    imgsrc: '/thumbnails/newproject1.png',
+    imgsrc: '/thumbnails/newproject1.webp',
   },
   {
     title: 'Septic Cleaning Insurance Group',
@@ -75,7 +75,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://septiccleaninginsurance.com/',
-    imgsrc: '/thumbnails/newproject2.png',
+    imgsrc: '/thumbnails/newproject2.webp',
   },
   {
     title: 'Wee Care Daycare',
@@ -83,7 +83,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://www.weecaredc.com/',
-    imgsrc: '/thumbnails/project6.png',
+    imgsrc: '/thumbnails/project6.webp',
   },  
   {
     title: 'TaiVenture Childcare',
@@ -91,7 +91,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
     link: 'https://www.taiventurechildcare.com/',
-    imgsrc: '/thumbnails/project1.png',
+    imgsrc: '/thumbnails/project1.webp',
   },
   {
     title: 'Goschen Angels Home Care',
@@ -99,7 +99,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://www.goschenangelshomecare.com/',
-    imgsrc: '/thumbnails/project2.png',
+    imgsrc: '/thumbnails/project2.webp',
   },
   {
     title: 'Restoration Medical Supply, LLC',
@@ -107,7 +107,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://www.restorationmedsupply.com/',
-    imgsrc: '/thumbnails/project11.png',
+    imgsrc: '/thumbnails/project11.webp',
   },
   {
     title: 'Greater Caring Provider Helpers',
@@ -115,7 +115,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
     link: 'https://www.greatercaringproviderhelpersllc.com/',
-    imgsrc: '/thumbnails/project5.png',
+    imgsrc: '/thumbnails/project5.webp',
   },
   {
     title: 'Touching Lives Ministries',
@@ -123,7 +123,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://www.touchinglivesministries.org/',
-    imgsrc: '/thumbnails/newproject3.png',
+    imgsrc: '/thumbnails/newproject3.webp',
   },
   {
     title: 'Jullok Lux',
@@ -131,7 +131,7 @@ export const WORKS = [
     bg: 'linear-gradient(145deg,#f5c5ae,#e8a07a)',
     accent: '#ec4899',
     link: 'https://www.jullokluxbeauty.com/',
-    imgsrc: '/thumbnails/project10.png',
+    imgsrc: '/thumbnails/project10.webp',
   },
 ]
 

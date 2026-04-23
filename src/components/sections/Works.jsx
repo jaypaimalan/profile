@@ -18,7 +18,7 @@ export function Works({ T, AC, grad, divider }) {
                 style={{ height: 218, borderRadius: 22, background: w.bg, overflow: 'hidden', display: 'flex', alignItems: 'start', justifyContent: 'center', transition: 'transform 0.25s, box-shadow 0.25s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.02)'; e.currentTarget.style.boxShadow = '0 20px 50px rgba(0,0,0,.35)' }}
                 onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)';    e.currentTarget.style.boxShadow = 'none' }}>
-                   <img src={w.imgsrc} alt={w.title} style={{ width: '100%' }} /> 
+                   <img src={w.imgsrc} loading="lazy" alt={w.title} style={{ width: '100%' }} /> 
               </div>
             </a>
 
