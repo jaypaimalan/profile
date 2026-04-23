@@ -18,10 +18,11 @@ export function About({ T, AC, accentId, grad, gradText, divider, isMobile }) {
           THE PERSON <span key={`about-${accentId}`} style={gradText}>BEHIND THE CODE</span>
         </h2>
         <p style={{ ...F.DM, color: T.textSub, fontSize: 13.5, lineHeight: 1.82, maxWidth: isMobile ? '100%' : 440, marginBottom: 18 }}>
-          I'm a Wordpress Developer based in Cebu, Philippines with a knack for turning designs into fast, polished digital experiences. Before writing code, I spent years as a 2D animator — and that eye for detail, motion, and composition still shapes every interface I build.
+          I'm a WordPress Developer based in Cebu, Philippines, specializing in converting designs into clean, performant, and accessible digital experiences. My background as a 2D animator sharpened my eye for precision—something I now bring to every line of code and interface I build.
         </p>
+
         <p style={{ ...F.DM, color: T.textSub, fontSize: 13.5, lineHeight: 1.82, maxWidth: isMobile ? '100%' : 440, marginBottom: 36 }}>
-          Armed with a BS in Information Technology and deep hands-on experience across the WordPress ecosystem and modern JavaScript frameworks, I build sites that look great, load fast, and rank well — without cutting corners on accessibility or maintainability.
+          With a BS in Information Technology and deep experience in WordPress development, SEO, and JavaScript tooling, I create websites that load fast, scale well, and achieve real business results—while maintaining strong coding standards and long-term maintainability.
         </p>
         <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
           {[

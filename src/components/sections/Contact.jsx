@@ -130,7 +130,7 @@ export function Contact({ T, AC, accentId, grad, gradText, divider, isMobile }) 
         <h2 style={{ ...F.BC, fontSize: 'clamp(36px,5vw,52px)', fontWeight: 900, lineHeight: .92, color: T.text }}>LET'S BUILD </h2>
         <h2 key={`reach-${accentId}`} style={{ ...F.BC, fontSize: 'clamp(36px,5vw,52px)', fontWeight: 900, lineHeight: .92, marginBottom: 22, ...gradText }}>SOMETHING GREAT</h2>
         <p style={{ ...F.DM, color: T.textSub, fontSize: 13.5, lineHeight: 1.78, maxWidth: 'clamp(100%, 60vw, 300px)', marginBottom: 36 }}>
-          Got a site to launch, a product to ship, or an idea that needs a front-end? I'd love to hear about it. Currently open to freelance projects and full-time roles.
+        Have a website to build, optimize, or revamp? I'm currently open to freelance work and full-time roles, and I'd be happy to help turn your ideas into fast, polished digital experiences.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
           {CONTACT_INFO.map(c => (

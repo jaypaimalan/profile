@@ -13,7 +13,7 @@ export function Hero({ T, AC, isDark, accentId, grad, gradText, scrollTo }) {
       {/* Text */}
       <div data-reveal="up" style={{ flex: '1 1 300px', zIndex: 2, minWidth: 0 }}>
         <p style={{ ...F.DM, color: AC.primary, fontSize: 11, letterSpacing: '.32em', textTransform: 'uppercase', marginBottom: 20, transition: 'color 0.3s' }}>
-          Wordpress Developer · Based in Cebu, PH
+          WordPress Developer · Based in Cebu, Philippines
         </p>
         <div style={{ ...F.BC, lineHeight: 0.93, marginBottom: 26 }}>
           <div style={{ fontSize: 'clamp(42px,6vw,66px)', fontWeight: 900, color: T.text, letterSpacing: '-1.5px' }}>MY NAME IS</div>
@@ -21,8 +21,8 @@ export function Hero({ T, AC, isDark, accentId, grad, gradText, scrollTo }) {
           <div key={`h2-${accentId}`} style={{ fontSize: 'clamp(42px,6vw,66px)', fontWeight: 900, letterSpacing: '-1.5px', ...gradText }}>JAY...</div>
         </div>
         <p style={{ ...F.DM, color: T.textSub, fontSize: 13.5, lineHeight: 1.8, maxWidth: 370, marginBottom: 36 }}>
-           I craft fast, accessible, and visually precise websites — from pixel-perfect WordPress builds to modern React apps. Formerly a 2D animator, I bring both technical skill and a designer's eye to every project.
-        </p>
+            I craft performant, accessible, and SEO-ready websites—combining WordPress expertise with clean front-end development practices. Previously a 2D animator, I approach every build with precision, clarity, and thoughtful visual detail.
+          </p>
         <button
           onClick={() => scrollTo('sec-contact', 'Contact')}
           style={{ ...F.B, border: 'none', cursor: 'pointer', color: '#fff', padding: '13px 30px', borderRadius: 50, fontSize: 13, fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: 8, background: grad, boxShadow: `0 8px 28px ${AC.from}50`, transition: 'opacity 0.2s' }}

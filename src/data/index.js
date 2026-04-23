@@ -9,16 +9,18 @@ export const NAV = [
 
 export const EXPERIENCE = [
   {
-    role: 'Wordpress Developer',
+    role: 'WordPress Developer',
     company: 'Proweaver Inc.',
     location: 'Cebu City, Philippines',
     period: 'Sep 2023 – Jan 2026',
     bullets: [
-      'Built performance-optimized WordPress websites using Elementor, HTML, CSS, JavaScript, and PHP',
-      'Executed pixel-perfect UI from Figma designs, ensuring accurate spacing, typography, and visual hierarchy',
-      'Ensured full responsiveness, accessibility compliance, and SEO readiness across all delivered projects',
-      'Collaborated with project managers and designers to meet tight deadlines while maintaining quality',
-      'Integrated WooCommerce, ACF, and third-party plugins to extend WordPress functionality',
+      'Developed performance-optimized WordPress websites using Elementor, HTML, CSS, JavaScript, and PHP',
+      'Converted Figma designs into pixel-perfect, responsive website layouts',
+      'Implemented on-page and technical SEO best practices to improve ranking and visibility',
+      'Ensured cross-browser compatibility, accessibility compliance, and mobile-first responsiveness',
+      'Integrated WooCommerce, ACF, CPTs, and custom plugin configurations for extended functionality',
+      'Collaborated with designers and PMs to deliver fast iterations while maintaining code quality',
+      'Managed deployments using Git workflows and cPanel hosting (HostGator)',
     ],
   },
   {
@@ -27,10 +29,10 @@ export const EXPERIENCE = [
     location: 'Cebu City, Philippines',
     period: 'Jul 2019 – Dec 2022',
     bullets: [
-      'Produced high-quality 2D animations with a strong focus on timing, clarity, and visual storytelling',
-      'Strengthened design discipline and attention to detail, directly contributing to improved front-end execution',
-      'Delivered creative animation assets under tight production timelines while maintaining consistency',
-      'Collaborated cross-functionally with creative directors and storyboard artists on multiple projects',
+      'Produced high-quality 2D animations with strong visual storytelling and timing principles',
+      'Enhanced creative discipline and attention to detail, improving later front-end development precision',
+      'Delivered animation assets under tight production timelines while maintaining consistency',
+      'Collaborated with creative directors and storyboard teams on multi-episode projects',
     ],
   },
 ]
@@ -38,15 +40,23 @@ export const EXPERIENCE = [
 export const SKILLS = [
   {
     category: 'Front-End',
-    items: ['HTML5', 'CSS3', 'JavaScript', 'React','Bootstrap', 'TailwindCSS'],
+    items: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Bootstrap', 'TailwindCSS', 'Responsive / Mobile-First Development', 'Cross-Browser Compatibility'
+    ],
   },
   {
     category: 'WordPress & CMS',
-    items: ['PHP', 'WordPress', 'Elementor', 'Divi', 'WPBakery', 'Cornerstone', 'WooCommerce', 'ACF', 'Shopify'],
-  },
+    items: [
+      'Shopify', 'Webflow', 'Framer', 'PHP', 'Elementor', 'Divi', 'WPBakery', 'Cornerstone',
+      'WooCommerce', 'ACF', 'Shopify', 'Custom Post Types', 'Custom Themes'
+    ],
+  }, 
   {
     category: 'Tools & Optimization',
-    items: ['Git', 'Figma', 'Canva', 'Google Analytics', 'Google Tag Manager', 'SEO', 'UX & Accessibility'],
+    items: [
+      'Git', 'Figma', 'Canva', 'Google Analytics', 'Google Search Console',
+      'Google Tag Manager', 'SEO (On-page & Technical)', 'Core Web Vitals',
+      'UX & Accessibility', 'cPanel / HostGator Deployment', 'AI-Assisted Development'
+    ],
   },
 ]
 
@@ -74,7 +84,7 @@ export const WORKS = [
     accent: '#ec4899',
     link: 'https://www.weecaredc.com/',
     imgsrc: '/thumbnails/project6.png',
-  }, 
+  },  
   {
     title: 'TaiVenture Childcare',
     type: 'Childcare & Education · Service Site',
@@ -98,7 +108,7 @@ export const WORKS = [
     accent: '#ec4899',
     link: 'https://www.restorationmedsupply.com/',
     imgsrc: '/thumbnails/project11.png',
-  }, 
+  },
   {
     title: 'Greater Caring Provider Helpers',
     type: 'Virtual Healthcare · Service Site',
@@ -122,17 +132,17 @@ export const WORKS = [
     accent: '#ec4899',
     link: 'https://www.jullokluxbeauty.com/',
     imgsrc: '/thumbnails/project10.png',
-  } 
+  },
 ]
 
 export const CONTACT_INFO = [
   { icon: IC.mail,  label: 'EMAIL',    value: 'jaypaimalan@gmail.com',       href: 'mailto:jaypaimalan@gmail.com' },
   { icon: IC.phone, label: 'PHONE',    value: '+63 946 261 8278',             href: 'tel:+639462618278' },
-  { icon: IC.pin,   label: 'LOCATION', value: 'Basak, Lapu-Lapu City, Cebu', href: null },
+  { icon: IC.pin,   label: 'LOCATION', value: 'Lapu-Lapu City, Cebu, Philippines', href: null },
 ]
 
 export const SOCIAL_LINKS = [
   { href: 'mailto:jaypaimalan@gmail.com',        icon: IC.mail,     title: 'Email'    },
   { href: 'https://github.com/jaypaimalan',      icon: IC.github,   title: 'GitHub'   },
-  { href: 'https://linkedin.com/in/jaypaimalan', icon: IC.linkedin, title: 'LinkedIn' },
+  { href: 'https://linkedin.com/in/francis-paimalan', icon: IC.linkedin, title: 'LinkedIn' },
 ]
