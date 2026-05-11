@@ -42,7 +42,7 @@ export function Hero({ T, AC, isDark, accentId, grad, gradText, scrollTo }) {
 
           {/* Circle frame */}
           <div style={{ position: 'absolute', inset: 0, borderRadius: '50%', overflow: 'hidden', zIndex: 2, boxShadow: `0 0 0 3px ${AC.from}50, 0 20px 60px ${AC.from}40` }}>
-            <img src={profileImg} fetchpriority="high" loading="eager"  width="300" height="300"   alt="Francis Jay Paimalan"
+            <img src={profileImg} fetchpriority="high"  loading="eager"  width="300" height="300"   alt="Francis Jay Paimalan"
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 15%', display: 'block' }}
             />
           </div>
