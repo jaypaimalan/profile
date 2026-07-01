@@ -110,11 +110,11 @@ export const WORKS = [
     imgsrc: '/thumbnails/project11.webp',
   },
   {
-    title: 'EcoWave',
-    type: 'Remodeling & Construction',
+    title: 'GFAM Multi Services and LLC',
+    type: 'Multi Services & Printing Services',
     bg: 'linear-gradient(145deg,#5ecfca,#30a89e)',
     accent: '#5ecfca',
-    link: 'https://www.ecowaveremodeling.com/',
+    link: 'https://www.gfammultiservices.com/',
     imgsrc: '/thumbnails/project5.webp',
   },
   {
